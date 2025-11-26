@@ -71,5 +71,18 @@ namespace Coursera_Exercise.Controllers
             course.Credit = editedCourse.Credit;
             return NoContent();
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteCourse(int id)
+        {
+            Course? course = courses.FirstOrDefault(c => c.Id == id);
+            if (course == null)
+            {
+                return NotFound();
+            }
+
+            courses.Remove(course);
+            return NoContent();
+        }
     }
 }

@@ -104,3 +104,8 @@ Content-type: application/json
   "Total_time": 22,
   "Credit": 33
 }
+
+###
+
+DELETE {{HostAddress}}/api/courses/6
+Accept: application/json
