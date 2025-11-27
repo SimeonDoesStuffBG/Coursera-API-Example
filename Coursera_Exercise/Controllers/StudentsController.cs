@@ -2,9 +2,6 @@
 using Coursera_Exercise.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection.Metadata.Ecma335;
-using System.Security.Cryptography.Xml;
-using System.Threading.Tasks;
 
 namespace Coursera_Exercise.Controllers
 {
@@ -13,7 +10,10 @@ namespace Coursera_Exercise.Controllers
     public class StudentsController : ControllerBase
     {
         private readonly CourseraExerciseContext _context;
-
+        private DbSet<Student> Students
+        {
+            get { return _context.Students; }
+        }
         public StudentsController(CourseraExerciseContext context)
         {
             _context = context;
@@ -22,13 +22,13 @@ namespace Coursera_Exercise.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Student>>> GetStudents()
         { 
-            return Ok(await _context.Students.ToListAsync());
+            return Ok(await Students.ToListAsync());
         }
 
         [HttpGet("{pin}")]
         public async Task<ActionResult<Student>> GetStudentByPIN(string pin)
         {
-            Student? student = await _context.Students.FindAsync(pin);
+            Student? student = await Students.FindAsync(pin);
             if (student == null)
             {
                 return NotFound();
@@ -44,13 +44,13 @@ namespace Coursera_Exercise.Controllers
             {
                 return BadRequest();
             }
-            Student? existingStudent = await _context.Students.FindAsync(newStudent.PIN);
+            Student? existingStudent = await Students.FindAsync(newStudent.PIN);
             if ( existingStudent != null)
             {
                 return Conflict();
             }
 
-            _context.Students.Add(newStudent);
+            Students.Add(newStudent);
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetStudentByPIN), new { pin=newStudent.PIN }, newStudent);
         }
@@ -58,12 +58,12 @@ namespace Coursera_Exercise.Controllers
         [HttpPut("{pin}")]
         public async Task<IActionResult> UpdateStudent(string pin, Student editedStudent)
         {
-            Student? student = await _context.Students.FindAsync(pin);
+            Student? student = await Students.FindAsync(pin);
             if(student == null)
             {
                 return NotFound();
             }
-            Student? otherStudent = await _context.Students.FindAsync(editedStudent.PIN);
+            Student? otherStudent = await Students.FindAsync(editedStudent.PIN);
             if (otherStudent != null && otherStudent.PIN != pin)
             {
                 return Conflict();
@@ -79,13 +79,13 @@ namespace Coursera_Exercise.Controllers
         [HttpDelete("{pin}")]
         public async Task<IActionResult> DeleteStudent(string pin)
         {
-            Student? student = await _context.Students.FindAsync(pin);
+            Student? student = await Students.FindAsync(pin);
             if (student == null)
             {
                 return NotFound();
             }
 
-            _context.Students.Remove(student);
+            Students.Remove(student);
             await _context.SaveChangesAsync();
             return NoContent();
         }

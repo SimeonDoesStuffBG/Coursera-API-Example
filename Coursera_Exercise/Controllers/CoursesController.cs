@@ -1,9 +1,7 @@
 ﻿using Coursera_Exercise.Data;
 using Coursera_Exercise.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Threading.Tasks;
 
 namespace Coursera_Exercise.Controllers
 {
@@ -12,7 +10,10 @@ namespace Coursera_Exercise.Controllers
     public class CoursesController : ControllerBase
     {
         private readonly CourseraExerciseContext _context;
-
+        private DbSet<Course> Courses
+        {
+            get { return _context.Courses; }
+        }
         public CoursesController(CourseraExerciseContext context)
         {
             _context = context;
@@ -21,13 +22,13 @@ namespace Coursera_Exercise.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Course>>> GetCourses()
         {
-            return Ok(await _context.Courses.ToListAsync());
+            return Ok(await Courses.ToListAsync());
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Course>> GetCourseByID(int id)
         {
-            Course? course = await _context.Courses.FindAsync(id);
+            Course? course = await Courses.FindAsync(id);
             if(course == null)
             {
                 return NotFound();
@@ -44,7 +45,7 @@ namespace Coursera_Exercise.Controllers
                 return NotFound();
             }
 
-            _context.Courses.Add(newCourse);
+            Courses.Add(newCourse);
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetCourseByID), new { id = newCourse.Id }, newCourse);
         }
@@ -52,12 +53,12 @@ namespace Coursera_Exercise.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> EditCourse(int id, Course editedCourse)
         {
-            Course? course = await _context.Courses.FindAsync(id);
+            Course? course = await Courses.FindAsync(id);
             if (course == null)
             {
                 return NotFound();
             }
-            Course? otherCourse = await _context.Courses.FindAsync(id);
+            Course? otherCourse = await Courses.FindAsync(id);
             if (otherCourse!=null && editedCourse.Id != course.Id)
             {
                 return Conflict();
@@ -74,13 +75,13 @@ namespace Coursera_Exercise.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCourse(int id)
         {
-            Course? course = await _context.Courses.FindAsync(id);
+            Course? course = await Courses.FindAsync(id);
             if (course == null)
             {
                 return NotFound();
             }
 
-            _context.Courses.Remove(course);
+            Courses.Remove(course);
             await _context.SaveChangesAsync();
             return NoContent();
         }

@@ -4,6 +4,7 @@ using Coursera_Exercise.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Coursera_Exercise.Migrations
 {
     [DbContext(typeof(CourseraExerciseContext))]
-    partial class CourseraExerciseContextModelSnapshot : ModelSnapshot
+    [Migration("20251127115254_Init Views")]
+    partial class InitViews
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -22,7 +25,7 @@ namespace Coursera_Exercise.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Coursera_Exercise.DB_Views.CourseDetails", b =>
+            modelBuilder.Entity("Coursera_Exercise.DB_Views.CourseDetail", b =>
                 {
                     b.Property<int>("Course_id")
                         .HasColumnType("int");

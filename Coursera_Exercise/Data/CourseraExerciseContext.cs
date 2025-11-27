@@ -1,4 +1,5 @@
-﻿using Coursera_Exercise.Models;
+﻿using Coursera_Exercise.DB_Views;
+using Coursera_Exercise.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Coursera_Exercise.Data
@@ -6,6 +7,13 @@ namespace Coursera_Exercise.Data
     public class CourseraExerciseContext:DbContext
     {
         public CourseraExerciseContext(DbContextOptions<CourseraExerciseContext> options):base(options) { }
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Instructor> Instructors { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<StudentCourse> StudentsCourse { get; set; }
+        
+        public DbSet<StudentCredit> StudentCredits { get; set; }
+        public DbSet<CourseDetails> CourseDetails { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -37,7 +45,7 @@ namespace Coursera_Exercise.Data
 
             modelBuilder.Entity<StudentCourse>().HasData(
                 new StudentCourse { Student_pin = "hjPe23Lmn4", Course_id = 3, Completion_Date = null },
-                new StudentCourse { Student_pin = "mnet56sda7", Course_id = 3, Completion_Date = new DateOnly(2023,12,9) },
+                new StudentCourse { Student_pin = "mnet56sda7", Course_id = 3, Completion_Date = new DateOnly(2023, 12, 9) },
                 new StudentCourse { Student_pin = "mnet56sda7", Course_id = 4, Completion_Date = new DateOnly(2023, 12, 9) },
                 new StudentCourse { Student_pin = "lkas45mkp6", Course_id = 3, Completion_Date = null },
                 new StudentCourse { Student_pin = "hjPe23Lmn4", Course_id = 5, Completion_Date = null },
@@ -53,10 +61,9 @@ namespace Coursera_Exercise.Data
                 new StudentCourse { Student_pin = "mnet56sda7", Course_id = 1, Completion_Date = null }
             );
 
+            modelBuilder.Entity<StudentCredit>().HasNoKey().ToView(nameof(StudentCredits));
+            modelBuilder.Entity<CourseDetails>().HasNoKey().ToView(nameof(CourseDetails));
+
         }
-        public DbSet<Course> Courses { get; set; }
-        public DbSet<Instructor> Instructors { get; set; }
-        public DbSet<Student> Students { get; set; }
-        public DbSet<StudentCourse> StudentsCourse { get; set; }
     }
 }

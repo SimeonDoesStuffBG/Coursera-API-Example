@@ -1,6 +1,5 @@
 ﻿using Coursera_Exercise.Data;
 using Coursera_Exercise.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,6 +10,10 @@ namespace Coursera_Exercise.Controllers
     public class InstructorsController : ControllerBase
     {
         private readonly CourseraExerciseContext _context;
+        private DbSet<Instructor> Instructors
+        {
+            get { return _context.Instructors; }
+        }
         public InstructorsController(CourseraExerciseContext context)
         {
             _context = context;
@@ -19,13 +22,13 @@ namespace Coursera_Exercise.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Instructor>>> GetInstructors()
         {
-            return Ok(await _context.Instructors.ToListAsync());
+            return Ok(await Instructors.ToListAsync());
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Instructor>> GetInstructorByID (int id)
         {
-            Instructor? instructor = await _context.Instructors.FindAsync(id);
+            Instructor? instructor = await Instructors.FindAsync(id);
             if (instructor == null)
                 return NotFound();
 
@@ -40,7 +43,7 @@ namespace Coursera_Exercise.Controllers
                 return BadRequest();
             }
 
-            _context.Instructors.Add(newInstructor);
+            Instructors.Add(newInstructor);
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetInstructorByID), new { id = newInstructor.Id }, newInstructor);
         }
@@ -48,7 +51,7 @@ namespace Coursera_Exercise.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> EditInstructor(int id, Instructor editedInstructor)
         {
-            Instructor? instructor = await _context.Instructors.FindAsync(id);
+            Instructor? instructor = await Instructors.FindAsync(id);
             if(instructor == null)
             {
                 return NotFound();
@@ -63,13 +66,13 @@ namespace Coursera_Exercise.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteInstructor(int id)
         {
-            Instructor? instructor = await _context.Instructors.FindAsync(id);
+            Instructor? instructor = await Instructors.FindAsync(id);
             if (instructor == null)
             {
                 return NotFound();
             }
 
-            _context.Instructors.Remove(instructor);
+            Instructors.Remove(instructor);
             await _context.SaveChangesAsync();
             return NoContent();
         }
