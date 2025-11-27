@@ -265,7 +265,7 @@
   },
   {
     "ContainingType": "Coursera_Exercise.Controllers.StudentsController",
-    "Method": "GetStudentById",
+    "Method": "GetStudentByPIN",
     "RelativePath": "api/Students/{pin}",
     "HttpMethod": "GET",
     "IsController": true,
