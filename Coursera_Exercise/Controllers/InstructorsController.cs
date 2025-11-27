@@ -1,6 +1,8 @@
-﻿using Coursera_Exercise.Models;
+﻿using Coursera_Exercise.Data;
+using Coursera_Exercise.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Coursera_Exercise.Controllers
 {
@@ -8,21 +10,22 @@ namespace Coursera_Exercise.Controllers
     [ApiController]
     public class InstructorsController : ControllerBase
     {
-       private static List<Instructor> instructors = new List<Instructor>
-       {
-           
-       };
+        private readonly CourseraExerciseContext _context;
+        public InstructorsController(CourseraExerciseContext context)
+        {
+            _context = context;
+        }
 
         [HttpGet]
-        public ActionResult<List<Instructor>> GetInstructors()
+        public async Task<ActionResult<List<Instructor>>> GetInstructors()
         {
-            return Ok(instructors);
+            return Ok(await _context.Instructors.ToListAsync());
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Instructor> GetInstructorByID (int id)
+        public async Task<ActionResult<Instructor>> GetInstructorByID (int id)
         {
-            Instructor? instructor = instructors.FirstOrDefault(i => i.Id == id);
+            Instructor? instructor = await _context.Instructors.FindAsync(id);
             if (instructor == null)
                 return NotFound();
 
@@ -30,50 +33,44 @@ namespace Coursera_Exercise.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Instructor> CreateInstructor(Instructor newInstructor)
+        public async Task<ActionResult<Instructor>> CreateInstructor(Instructor newInstructor)
         {
             if(newInstructor == null)
             {
                 return BadRequest();
             }
-            if (instructors.FirstOrDefault(i => i.Id == newInstructor.Id)!=null)
-            {
-                return Conflict();
-            }
 
-            instructors.Add(newInstructor);
+            _context.Instructors.Add(newInstructor);
+            await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetInstructorByID), new { id = newInstructor.Id }, newInstructor);
         }
 
         [HttpPut("{id}")]
-        public IActionResult EditInstructor(int id, Instructor editedInstructor)
+        public async Task<IActionResult> EditInstructor(int id, Instructor editedInstructor)
         {
-            Instructor? instructor = instructors.FirstOrDefault(i=>i.Id==id);
+            Instructor? instructor = await _context.Instructors.FindAsync(id);
             if(instructor == null)
             {
                 return NotFound();
             }
-            if(instructors.FirstOrDefault(i=>i.Id==editedInstructor.Id)!=null && instructor.Id != editedInstructor.Id)
-            {
-                return Conflict();
-            }
 
-            instructor.Id = editedInstructor.Id;
             instructor.First_name = editedInstructor.First_name;
             instructor.Last_name = editedInstructor.Last_name;
+            await _context.SaveChangesAsync();
             return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteInstructor(int id)
+        public async Task<IActionResult> DeleteInstructor(int id)
         {
-            Instructor? instructor = instructors.FirstOrDefault(i => i.Id == id);
+            Instructor? instructor = await _context.Instructors.FindAsync(id);
             if (instructor == null)
             {
                 return NotFound();
             }
 
-            instructors.Remove(instructor);
+            _context.Instructors.Remove(instructor);
+            await _context.SaveChangesAsync();
             return NoContent();
         }
     }

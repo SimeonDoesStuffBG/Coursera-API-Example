@@ -44,7 +44,12 @@ namespace Coursera_Exercise.Controllers
             {
                 return BadRequest();
             }
-           
+            Student? existingStudent = await _context.Students.FindAsync(newStudent.PIN);
+            if ( existingStudent != null)
+            {
+                return Conflict();
+            }
+
             _context.Students.Add(newStudent);
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetStudentByPIN), new { pin=newStudent.PIN }, newStudent);
@@ -54,13 +59,14 @@ namespace Coursera_Exercise.Controllers
         public async Task<IActionResult> UpdateStudent(string pin, Student editedStudent)
         {
             Student? student = await _context.Students.FindAsync(pin);
-            if(pin != editedStudent.PIN)
-            {
-                return Conflict();
-            }
             if(student == null)
             {
                 return NotFound();
+            }
+            Student? otherStudent = await _context.Students.FindAsync(editedStudent.PIN);
+            if (otherStudent != null && otherStudent.PIN != pin)
+            {
+                return Conflict();
             }
             
             student.First_name = editedStudent.First_name;
