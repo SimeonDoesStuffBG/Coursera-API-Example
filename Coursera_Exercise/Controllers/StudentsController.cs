@@ -10,11 +10,7 @@ namespace Coursera_Exercise.Controllers
     public class StudentsController : ControllerBase
     {
         private static List<Student> students = new List<Student>{ 
-            new Student { PIN = 123, First_name = "John", Last_name = "Doe", Time_created = DateTime.Now },
-            new Student { PIN = 234, First_name = "Rand", Last_name = "al'Thor", Time_created = DateTime.Now },
-            new Student { PIN = 345, First_name = "Paul", Last_name = "Atreides", Time_created = DateTime.Now },
-            new Student { PIN = 456, First_name = "Frodo", Last_name = "Baggins", Time_created = DateTime.Now },
-            new Student { PIN = 567, First_name = "James", Last_name = "Holden", Time_created = DateTime.Now },
+            
 
         };
 
@@ -25,7 +21,7 @@ namespace Coursera_Exercise.Controllers
         }
 
         [HttpGet("{pin}")]
-        public ActionResult<Student> GetStudentById(int pin)
+        public ActionResult<Student> GetStudentById(string pin)
         {
             Student? student = students.FirstOrDefault(s => s.PIN == pin);
             if(student == null)
@@ -47,7 +43,7 @@ namespace Coursera_Exercise.Controllers
         }
 
         [HttpPut("{pin}")]
-        public IActionResult UpdateStudent(int pin, Student editedStudent)
+        public IActionResult UpdateStudent(string pin, Student editedStudent)
         {
             Student? student = students.FirstOrDefault(s => s.PIN == pin);
             if(student == null)
@@ -65,7 +61,7 @@ namespace Coursera_Exercise.Controllers
         }
 
         [HttpDelete("{pin}")]
-        public IActionResult DeleteStudent(int pin)
+        public IActionResult DeleteStudent(string pin)
         {
             Student? student = students.FirstOrDefault(s => s.PIN == pin);
             if (student == null)

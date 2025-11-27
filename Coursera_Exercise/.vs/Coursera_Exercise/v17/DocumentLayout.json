@@ -3,36 +3,56 @@
   "WorkspaceRootPath": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|c:\\simeon\\coding\\coursera-api-example\\coursera_exercise\\coursera_exercise.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|solutionrelative:coursera_exercise.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Migrations\\20251127072002_Seed Data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20251127072002_Seed Data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|c:\\simeon\\coding\\coursera-api-example\\coursera_exercise\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|c:\\simeon\\coding\\coursera-api-example\\coursera_exercise\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|solutionrelative:controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|c:\\simeon\\coding\\coursera-api-example\\coursera_exercise\\data\\courseraexercisecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|solutionrelative:data\\courseraexercisecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|c:\\simeon\\coding\\coursera-api-example\\coursera_exercise\\controllers\\instructorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|solutionrelative:controllers\\instructorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|c:\\simeon\\coding\\coursera-api-example\\coursera_exercise\\models\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|solutionrelative:models\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|c:\\simeon\\coding\\coursera-api-example\\coursera_exercise\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|solutionrelative:controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Migrations\\20251127071131_Init Models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20251127071131_Init Models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|c:\\simeon\\coding\\coursera-api-example\\coursera_exercise\\models\\studentcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|solutionrelative:models\\studentcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|c:\\simeon\\coding\\coursera-api-example\\coursera_exercise\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|c:\\simeon\\coding\\coursera-api-example\\coursera_exercise\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|c:\\simeon\\coding\\coursera-api-example\\coursera_exercise\\models\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|solutionrelative:models\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|c:\\simeon\\coding\\coursera-api-example\\coursera_exercise\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|solutionrelative:controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|c:\\simeon\\coding\\coursera-api-example\\coursera_exercise\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|solutionrelative:controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|c:\\simeon\\coding\\coursera-api-example\\coursera_exercise\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|c:\\simeon\\coding\\coursera-api-example\\coursera_exercise\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|c:\\simeon\\coding\\coursera-api-example\\coursera_exercise\\coursera_exercise.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{3CB96D8C-F645-46FF-8344-2B0F8AFE33A5}|Coursera_Exercise.csproj|solutionrelative:coursera_exercise.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,79 +62,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CoursesController.cs",
-              "DocumentMoniker": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Controllers\\CoursesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CoursesController.cs",
-              "ToolTip": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Controllers\\CoursesController.cs",
-              "RelativeToolTip": "Controllers\\CoursesController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAuwCwAAABAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "20251127072002_Seed Data.cs",
+              "DocumentMoniker": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Migrations\\20251127072002_Seed Data.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251127072002_Seed Data.cs",
+              "ToolTip": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Migrations\\20251127072002_Seed Data.cs",
+              "RelativeToolTip": "Migrations\\20251127072002_Seed Data.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T13:16:50.079Z",
+              "WhenOpened": "2025-11-27T07:20:02.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "20251127071131_Init Models.cs",
+              "DocumentMoniker": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Migrations\\20251127071131_Init Models.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251127071131_Init Models.cs",
+              "ToolTip": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Migrations\\20251127071131_Init Models.cs",
+              "RelativeToolTip": "Migrations\\20251127071131_Init Models.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEUAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T07:11:31.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CourseraExerciseContext.cs",
+              "DocumentMoniker": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Data\\CourseraExerciseContext.cs",
+              "RelativeDocumentMoniker": "Data\\CourseraExerciseContext.cs",
+              "ToolTip": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Data\\CourseraExerciseContext.cs",
+              "RelativeToolTip": "Data\\CourseraExerciseContext.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAgwCgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T14:12:58.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "InstructorsController.cs",
               "DocumentMoniker": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Controllers\\InstructorsController.cs",
               "RelativeDocumentMoniker": "Controllers\\InstructorsController.cs",
               "ToolTip": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Controllers\\InstructorsController.cs",
               "RelativeToolTip": "Controllers\\InstructorsController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAswEYAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-26T11:59:53.842Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "StudentsController.cs",
               "DocumentMoniker": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Controllers\\StudentsController.cs",
               "RelativeDocumentMoniker": "Controllers\\StudentsController.cs",
               "ToolTip": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Controllers\\StudentsController.cs",
               "RelativeToolTip": "Controllers\\StudentsController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAD4vycAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-26T09:36:04.447Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "StudentCourse.cs",
               "DocumentMoniker": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Models\\StudentCourse.cs",
               "RelativeDocumentMoniker": "Models\\StudentCourse.cs",
               "ToolTip": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Models\\StudentCourse.cs",
               "RelativeToolTip": "Models\\StudentCourse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T09:34:07.109Z"
+              "WhenOpened": "2025-11-26T09:34:07.109Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Course.cs",
               "DocumentMoniker": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Models\\Course.cs",
               "RelativeDocumentMoniker": "Models\\Course.cs",
               "ToolTip": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Models\\Course.cs",
               "RelativeToolTip": "Models\\Course.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-26T09:26:44.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Instructor.cs",
               "DocumentMoniker": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Models\\Instructor.cs",
               "RelativeDocumentMoniker": "Models\\Instructor.cs",
@@ -127,28 +170,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Models\\Student.cs",
               "RelativeDocumentMoniker": "Models\\Student.cs",
               "ToolTip": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Models\\Student.cs",
               "RelativeToolTip": "Models\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T09:26:19.93Z"
+              "WhenOpened": "2025-11-26T09:26:19.93Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CoursesController.cs",
+              "ToolTip": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "Controllers\\CoursesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwAwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T13:16:50.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-26T14:11:02.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Coursera_Exercise.http",
               "DocumentMoniker": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Coursera_Exercise.http",
               "RelativeDocumentMoniker": "Coursera_Exercise.http",
               "ToolTip": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Coursera_Exercise.http",
               "RelativeToolTip": "Coursera_Exercise.http",
-              "ViewState": "AgIAAD4AAAAAAAAAAAA/wFYAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
               "WhenOpened": "2025-11-26T09:12:15.976Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Simeon\\Coding\\Coursera-API-Example\\Coursera_Exercise\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T14:19:08.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

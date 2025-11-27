@@ -72,6 +72,43 @@
     ]
   },
   {
+    "ContainingType": "Coursera_Exercise.Controllers.CoursesController",
+    "Method": "EditCourse",
+    "RelativePath": "api/Courses/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "editedCourse",
+        "Type": "Coursera_Exercise.Models.Course",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Coursera_Exercise.Controllers.CoursesController",
+    "Method": "DeleteCourse",
+    "RelativePath": "api/Courses/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Coursera_Exercise.Controllers.InstructorsController",
     "Method": "GetInstructors",
     "RelativePath": "api/Instructors",
@@ -236,7 +273,7 @@
     "Parameters": [
       {
         "Name": "pin",
-        "Type": "System.Int32",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -262,7 +299,7 @@
     "Parameters": [
       {
         "Name": "pin",
-        "Type": "System.Int32",
+        "Type": "System.String",
         "IsRequired": true
       },
       {
@@ -283,7 +320,7 @@
     "Parameters": [
       {
         "Name": "pin",
-        "Type": "System.Int32",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

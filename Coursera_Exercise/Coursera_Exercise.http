@@ -1,16 +1,12 @@
 @HostAddress = https://localhost:7000
 
-GET {{HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
 
 GET {{HostAddress}}/api/students
 Accept: application/json
 
 ###
 
-GET {{HostAddress}}/api/students/134
+GET {{HostAddress}}/api/students/123
 Accept: application/json
 
 ###
@@ -18,7 +14,7 @@ Accept: application/json
 POST {{HostAddress}}/api/students
 Content-type: application/json
 {
-  "PIN": 789,
+  "PIN": "789",
   "First_name":"Toph",
   "Last_name":"Beifong"
 }
@@ -28,7 +24,7 @@ Content-type: application/json
 PUT {{HostAddress}}/api/students/345
 Content-type: application/json
 {
-  "PIN":345,
+  "PIN":"345",
   "First_Name":"Duncan",
   "Last_Name":"Idaho"
 }
