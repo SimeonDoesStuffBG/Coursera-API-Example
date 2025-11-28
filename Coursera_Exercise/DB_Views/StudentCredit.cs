@@ -1,4 +1,6 @@
-﻿namespace Coursera_Exercise.DB_Views
+﻿using System.Numerics;
+
+namespace Coursera_Exercise.DB_Views
 {
     public class StudentCredit
     {

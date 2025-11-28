@@ -117,5 +117,5 @@ Accept: application/json
 
 ###
 
-GET {{HostAddress}}/api/courses/report
+GET {{HostAddress}}/api/courses/report?students=hjPe23Lmn4,mnet56sda7
 Accept: application/json
